@@ -1,9 +1,9 @@
 import 'dart:async';
-import 'movie_api_provider.dart';
-import '../models/item_model.dart';
+import 'tasks_extractor.dart';
+import '../models/task_model.dart';
 
 class Repository {
-  final moviesApiProvider = MovieApiProvider();
+  final taskExtractor = TasksExtractor();
 
-  Future<ItemModel> fetchAllMovies() => moviesApiProvider.fetchMovieList();
+  Future<TaskListModel> fetchAllTasks() => taskExtractor.getTaskList();
 }
