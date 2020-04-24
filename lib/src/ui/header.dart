@@ -21,7 +21,7 @@ class Header extends StatelessWidget {
               ),
             ),
             Text(
-              "How are you doing so far?",
+              "How you doing so far?",
               style: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold
