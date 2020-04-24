@@ -12,20 +12,24 @@ class _TaskCategoryListState extends State<TaskCategoryList> {
     return Expanded(
       child: Container(
         child: DefaultTabController(
-          length: 3,
+          length: 4,
           child: Scaffold(
             backgroundColor: Colors.white,
             appBar: TabBar(
-              indicatorPadding: EdgeInsets.symmetric(horizontal: 20.0),
+              indicatorColor: Color(0xff5491f5),
+              isScrollable: true,
               tabs: [
                 Tab(
-                  child: Text("TODAY"),
+                  child: Text("PERSONAL"),
                 ),
                 Tab(
-                  child: Text("WEEK"),
+                  child: Text("WORK"),
                 ),
                 Tab(
-                  child: Text("MONTH"),
+                  child: Text("DAILY"),
+                ),
+                Tab(
+                  child: Icon(Icons.add),
                 ),
               ],
             ),
@@ -33,6 +37,7 @@ class _TaskCategoryListState extends State<TaskCategoryList> {
               children: [
                 CategoryList(["Personal", "Health", "Doctor"]),
                 Icon(Icons.directions_transit),
+                Icon(Icons.directions_bike),
                 Icon(Icons.directions_bike),
               ],
             ),
