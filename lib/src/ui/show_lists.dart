@@ -35,7 +35,7 @@ class _TaskCategoryListState extends State<TaskCategoryList> {
             ),
             body: TabBarView(
               children: [
-                CategoryList(["Personal", "Health", "Doctor"]),
+                CategoryList(),
                 Icon(Icons.directions_transit),
                 Icon(Icons.directions_bike),
                 Icon(Icons.directions_bike),
