@@ -40,4 +40,8 @@ class TaskModel {
     _taskId = task['taskId'];
     _title = task['title'];
   }
+
+  toggleStatus(){
+    _isComplete = !_isComplete;
+  }
 }
